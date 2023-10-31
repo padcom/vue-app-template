@@ -30,6 +30,11 @@ export default defineConfig({
       lintOnStart: false,
     }),
   ],
+  resolve: {
+    alias: {
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
+    },
+  },
   css: {
     postcss: {
       plugins: [

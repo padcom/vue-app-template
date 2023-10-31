@@ -5,7 +5,7 @@
 
 <script lang="ts" setup>
 import { useI18n } from 'vue-i18n'
-import HelloWorld from './components/HelloWorld.vue'
+import HelloWorld from '@/components/HelloWorld.vue'
 
 // $t() - use application translation (src/i18n/locales/*.ts)
 // t()  - use local or application translation if local translation does not exist
