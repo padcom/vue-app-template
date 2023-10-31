@@ -1,4 +1,5 @@
 import type { ThemeConfig } from 'tailwindcss/types/config'
+// import defaultTheme from 'tailwindcss/defaultTheme'
 
 const theme: Partial<ThemeConfig & { extend: Partial<ThemeConfig> }> = {
   // Add overrides to the default theme here

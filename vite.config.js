@@ -5,7 +5,6 @@ import svg from 'vite-svg-loader'
 import vue from '@vitejs/plugin-vue'
 import i18n from '@intlify/unplugin-vue-i18n/vite'
 import eslint from 'vite-plugin-eslint'
-import dts from 'vite-plugin-dts'
 import nesting from 'tailwindcss/nesting'
 import tailwindcss from 'tailwindcss'
 import autoprefixer from 'autoprefixer'
@@ -28,7 +27,6 @@ export default defineConfig({
     eslint({
       lintOnStart: false,
     }),
-    dts({ insertTypesEntry: true, rollupTypes: true, logLevel: 'error' }),
   ],
   build: {
     lib: {
