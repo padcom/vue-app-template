@@ -1,5 +1,6 @@
 /* eslint-env node */
-import { defineConfig } from 'vite'
+import { fileURLToPath } from 'url'
+import { defineConfig } from 'vitest/config'
 
 import svg from 'vite-svg-loader'
 import vue from '@vitejs/plugin-vue'
@@ -21,7 +22,10 @@ export default defineConfig({
         },
       },
     }),
-    i18n(),
+    i18n({
+      runtimeOnly: false,
+      include: fileURLToPath(new URL('./src/i18n/locales/**', import.meta.url)),
+    }),
     eslint({
       lintOnStart: false,
     }),
@@ -37,6 +41,9 @@ export default defineConfig({
   },
   test: {
     environment: 'jsdom',
+    setupFiles: [
+      './vitest.setup.js',
+    ],
     coverage: {
       enabled: true,
       reporter: ['text', 'lcov'],
