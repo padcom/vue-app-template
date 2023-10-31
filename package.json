@@ -1,5 +1,5 @@
 {
-  "name": "@padcom/vuejs-app",
+  "name": "@padcom/vuejs-app-template",
   "version": "1.0.0",
   "description": "",
   "main": "./dist/common.umd.js",
