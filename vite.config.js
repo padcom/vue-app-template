@@ -28,25 +28,6 @@ export default defineConfig({
       lintOnStart: false,
     }),
   ],
-  build: {
-    lib: {
-      entry: './src/index.ts',
-      name: pkg.name.split('/').at(-1),
-    },
-    sourcemap: true,
-    rollupOptions: {
-      external: [
-        'vue',
-        'vue-i18n',
-      ],
-      output: {
-        globals: {
-          'vue': 'vue',
-          'vue-i18n': 'vueI18n',
-        },
-      },
-    },
-  },
   css: {
     postcss: {
       plugins: [
