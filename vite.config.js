@@ -9,8 +9,6 @@ import nesting from 'tailwindcss/nesting'
 import tailwindcss from 'tailwindcss'
 import autoprefixer from 'autoprefixer'
 
-import pkg from './package.json' assert { type: 'json' }
-
 export default defineConfig({
   plugins: [
     svg({

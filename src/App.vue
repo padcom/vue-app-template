@@ -1,5 +1,5 @@
 <template>
-  <HelloWorld message="from library" />
+  <HelloWorld :message="$t('title')" />
   <p class="note">{{ t('Now, delete me and get to work!') }}</p>
 </template>
 
@@ -7,6 +7,7 @@
 import { useI18n } from 'vue-i18n'
 import HelloWorld from './components/HelloWorld.vue'
 
+// $t() - use application translation (src/i18n/locales/*.ts)
 // t()  - use local or application translation if local translation does not exist
 const { t } = useI18n()
 </script>
