@@ -3,7 +3,7 @@
     "*.css": "tailwindcss"
   },
   "editor.codeActionsOnSave": {
-    "source.fixAll": true
+    "source.fixAll": "explicit"
   },
   "testing.automaticallyOpenPeekView": "never",
   "cSpell.words": [

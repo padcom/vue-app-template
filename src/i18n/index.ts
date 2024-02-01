@@ -1,4 +1,4 @@
-import { createI18n } from 'vue-i18n'
+import { createI18n } from '@padcom/vue-i18n'
 
 import { default as en } from './locales/en'
 import { default as pl } from './locales/pl'
@@ -14,7 +14,4 @@ export default createI18n({
   locale: navigator.language.split('-')[0],
   fallbackLocale: 'en',
   messages,
-  missingWarn: false,
-  fallbackWarn: false,
-  legacy: false,
 })

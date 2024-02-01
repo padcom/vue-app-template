@@ -4,7 +4,7 @@ import { defineConfig } from 'vitest/config'
 
 import svg from 'vite-svg-loader'
 import vue from '@vitejs/plugin-vue'
-import i18n from '@intlify/unplugin-vue-i18n/vite'
+import i18n from '@padcom/vite-plugin-vue-i18n'
 import eslint from 'vite-plugin-eslint'
 import nesting from 'tailwindcss/nesting'
 import tailwindcss from 'tailwindcss'
