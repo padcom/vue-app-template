@@ -12,8 +12,12 @@ import autoprefixer from 'autoprefixer'
 
 export default defineConfig({
   define: {
-    // set to false if you don't use Vue's options API to shave ~4.5kb off your final bundle
+    // Enable / disable Options API support
     __VUE_OPTIONS_API__: true,
+    // Enable / disable devtools support in production
+    __VUE_PROD_DEVTOOLS__: false,
+    // Enable / disable detailed warnings for hydration mismatches in production
+    __VUE_PROD_HYDRATION_MISMATCH_DETAILS__: false,
   },
   plugins: [
     svg({
