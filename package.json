@@ -29,7 +29,7 @@
   },
   "devDependencies": {
     "@padcom/eslint-config-vue": "^0.6.0",
-    "@padcom/nano-css-reset": "^0.0.1",
+    "@padcom/nano-css-reset": "^0.1.0",
     "@padcom/vue-i18n": "^0.6.0",
     "@padcom/vite-plugin-vue-i18n": "^0.6.0",
     "@tailwindcss/typography": "^0.5.10",
