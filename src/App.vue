@@ -12,6 +12,6 @@ const { t } = useI18n({ useScope: 'global' })
 
 <style lang="postcss" scoped>
 .note {
-  @apply mt-10;
+  margin-top: 8px;
 }
 </style>

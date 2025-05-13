@@ -1,6 +1,4 @@
-import '@padcom/nano-css-reset'
-import './tailwind.css'
-
+import './main.css'
 import { createApp } from 'vue'
 import i18n from './i18n'
 
