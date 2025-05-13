@@ -2,17 +2,6 @@
   "name": "@padcom/vuejs-app-template",
   "version": "1.0.0",
   "description": "",
-  "main": "./dist/common.umd.js",
-  "module": "./dist/common.mjs",
-  "types": "./dist/types.d.ts",
-  "exports": {
-    ".": {
-      "require": "./dist/common.umd.js",
-      "import": "./dist/common.mjs",
-      "types": "./dist/types.d.ts"
-    },
-    "./dist/style.css": "./dist/style.css"
-  },
   "scripts": {
     "start": "vite",
     "test": "vitest run --environment jsdom --root . --coverage",
@@ -21,25 +10,20 @@
     "dev": "vite build -w",
     "build": "vite build"
   },
-  "keywords": [],
+  "keywords": ["vue"],
   "author": "Matthias Hryniszak <padcom@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "vue": "^3.4.15"
   },
   "devDependencies": {
-    "@padcom/nano-css-reset": "^0.1.0",
-    "@padcom/vite-config-vue": "^0.0.4",
-    "@padcom/vue-i18n": "^0.6.0",
-    "@vue/tsconfig": "^0.5.1",
+    "@padcom/eslint-config-vue": "0.20.1",
+    "@padcom/nano-css-reset": "0.3.0",
+    "@padcom/tsconfig": "0.0.3",
+    "@padcom/vite-config-vue": "0.14.1",
     "@vueuse/core": "10.7.2",
     "tailwindcss": "^3.4.1",
-    "vite": "^5.0.12",
-    "vitest": "^1.2.2"
-  },
-  "eslintConfig": {
-    "extends": [
-      "@padcom/eslint-config-vue"
-    ]
+    "vite": "^6",
+    "vue-i18n": "11.1.3"
   }
 }
